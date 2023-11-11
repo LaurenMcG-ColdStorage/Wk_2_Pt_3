@@ -23,14 +23,20 @@ console.log('3. Access the second value of supplyChanges:');
 
 let secondItem = supplyChanges[1]; //Created variable, assigned it to array second value
 console.log(secondItem);           //Validated value
+
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
 console.log('4. Remove the last value from supplyChanges:');
 
+let removedItem = supplyChanges.pop(); //Create variable, assign value
+console.log(supplyChanges);            //Validate value removed from suppyChanges
+console.log(removedItem);              //validate value assigned to removedItem
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Add the value 25 into supplyChanges.');
 
+supplyChanges.push(25);
+console.log(supplyChanges);
 
 // 6. Create three new variables named 'positives', 'negatives', and
 //    'zeroes' whose values are empty arrays. Then, write a for loop

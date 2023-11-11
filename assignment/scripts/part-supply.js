@@ -6,17 +6,23 @@ console.log('****** Part Supply *******');
 // 1. Create a variable called 'partsNeeded' with a value of the number 40.
 console.log('1. Create partsNeeded:');
 
+let partsNeeded = 40;      //Created variable, assigned value
+console.log(partsNeeded);  //Validated variable
+
 
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
 
+let supplyChanges = [3, 5, -6, 0, 7, 11]; //Created supplyChanges, placed values in array
+console.log(supplyChanges);               //Validated array
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
 //    item in the 'supplyChanges' array.
 console.log('3. Access the second value of supplyChanges:');
 
-
+let secondItem = supplyChanges[1]; //Created variable, assigned it to array second value
+console.log(secondItem);           //Validated value
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
 console.log('4. Remove the last value from supplyChanges:');

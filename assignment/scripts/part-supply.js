@@ -35,8 +35,8 @@ console.log(removedItem);              //validate value assigned to removedItem
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Add the value 25 into supplyChanges.');
 
-supplyChanges.push(25);
-console.log(supplyChanges);
+supplyChanges.push(25);      //Added value to supplyChanges
+console.log(supplyChanges);  //Validated updated array
 
 // 6. Create three new variables named 'positives', 'negatives', and
 //    'zeroes' whose values are empty arrays. Then, write a for loop
@@ -47,8 +47,22 @@ console.log(supplyChanges);
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
 
+let positives = [];
+let negatives = [];
+let zeroes = [];
 
-
+for (let inv = 0; inv < supplyChanges.length; inv++){
+  if (supplyChanges[inv] > 0){
+    positives.push(supplyChanges[inv]);
+  } else if (supplyChanges[inv] < 0){
+    negatives.push(supplyChanges[inv]);
+  } else {
+    zeroes.push(supplyChanges[inv]);
+  };
+};
+console.log(positives);
+console.log(negatives);
+console.log(zeroes);
 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
@@ -56,7 +70,22 @@ console.log('6. Looping through supplyChanges to populate arrays with positive, 
 //    'stretchNegatives', and 'stretchZeroes'. 
 console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
 
+let stretchPositives = [];
+let stretchNegatives = [];
+let stretchZeroes =[];
 
+for (let inv of supplyChanges){
+  if (inv > 0){
+    stretchPositives.push(inv);
+  } else if (inv < 0){
+    stretchNegatives.push(inv);
+  } else {
+    stretchZeroes.push(inv);
+  };
+};
+console.log(positives);
+console.log(negatives);
+console.log(zeroes);
 // 8. Create a variable called 'totalParts' and assign it a value of 0.
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
